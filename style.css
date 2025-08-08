@@ -243,6 +243,9 @@ body {
   .title {
     width: 15rem;
   }
+  body {
+    padding: 5rem 3rem;
+  }
 }
 @media (max-width: 384px) {
   html {
