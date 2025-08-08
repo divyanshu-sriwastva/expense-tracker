@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: #eeee;
+  padding: 3rem 0;
+}
+
+.head {
+  justify-content: space-between;
+  align-items: unset;
+  gap: 8rem;
+}
+
+.headBox {
+  padding: 1.8rem;
+  justify-content: flex-start;
+  background: #fff;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.headBox h2,
+.expenses h2 {
+  font-weight: 500;
+  color: #383838;
+  font-size: 2.8rem;
+}
+
+.headBox input,
+.dialog input {
+  width: 32rem;
+  padding: 0.7rem;
+  border: 0.2rem solid #2f2f2fc7;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}
+
+.headBox button,
+.dialog button,
+.error button {
+  background: #316eff;
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: 0.3s opacity;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.headBox button:hover,
+.dialog button:hover,
+.error button:hover,
+.dialog ion-icon:hover,
+.icons ion-icon:hover {
+  opacity: 0.8;
+}
+
+.headBox button:active,
+.dialog button:active,
+.dialog ion-icon:active,
+.error button:active,
+.icons ion-icon:active {
+  opacity: 0.5;
+}
+
+.details {
+  width: 100%;
+  background: #316eff;
+  border-radius: 0.6rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.badge {
+  flex-direction: column;
+  gap: 0.8rem;
+  color: #fff;
+}
+
+.badge h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.badge span {
+  font-size: 1.9rem;
+}
+
+.expenses {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  gap: 2rem;
+  background: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.expenses h2 {
+  font-size: 2.5rem;
+}
+
+.data {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-left: 0.5rem solid #316eff;
+}
+
+.title {
+  display: inline-block;
+  width: 29rem;
+}
+
+.title,
+.price {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+.price {
+  color: #383838;
+}
+
+.icons ion-icon {
+  color: #316eff;
+  font-size: 2.7rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.error-sec,
+.edit-sec {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.5rem);
+}
+
+.error,
+.dialog {
+  flex-direction: column;
+  padding: 4rem 2rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  width: 60rem;
+  gap: 2rem;
+}
+
+.error-sign ion-icon {
+  font-size: 6rem;
+  padding: 1rem;
+  border: 0.3rem solid #316eff;
+  border-radius: 100%;
+  color: #316eff;
+}
+
+.error h2 {
+  font-weight: 500;
+  color: #1e1e1e;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.dialog {
+  width: auto;
+  padding-top: 2rem;
+}
+
+.dialog input {
+  width: 50rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.dialog ion-icon {
+  font-size: 3rem;
+  color: #316eff;
+  align-self: flex-end;
+}
+
+#edit-err {
+  font-size: 1.9rem;
+  color: red;
+}
+
+/* responsive bhi pela jaye,,,,,,,,,, */
+@media (max-width: 920px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 625px) {
+  .head {
+    justify-content: center;
+  }
+  .headBox {
+    width: 100%;
+  }
+  .headBox input {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  html {
+    font-size: 38%;
+  }
+  .title {
+    width: 15rem;
+  }
+}
+@media (max-width: 384px) {
+  html {
+    font-size: 30%;
+  }
+}

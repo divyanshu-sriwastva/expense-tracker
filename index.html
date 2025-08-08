@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker - Js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+    <!-- Budget aur expense ko add karne ka Ui -->
+    <main class="flex" style="flex-direction: column; gap: 30px">
+      <div class="head flex">
+        <div class="headBox flex">
+          <h2>Budget</h2>
+          <input type="number" id="budgetIn" placeholder="Enter total amount" />
+          <button id="addBud">Set Budget</button>
+        </div>
+        <div class="headBox flex">
+          <h2>Expenses</h2>
+          <input type="text" id="titleIn" placeholder="enter title of product" />
+          <input type="number" id="costIn" placeholder="enter cost of product" />
+          <button id="addExp">Check amount</button>
+        </div>
+      </div>
+      <!-- kitna total hai usko dikhane ka Ui -->
+      <section class="details flex">
+        <div class="flex badge">
+          <h3>Total Budget</h3>
+          <span id="budget">0</span>
+        </div>
+        <div class="flex badge">
+          <h3>Expenses</h3>
+          <span id="expenses">0</span>
+        </div>
+        <div class="flex badge">
+          <h3>Balance</h3>
+          <span id="balance">0</span>
+        </div>
+      </section>
+      <!-- detailing me expenses ko dikhane ka Ui -->
+      <section class="flex expenses">
+        <h2>Expenses List</h2>
+        <!-- <div class="data flex">
+          <span class="title">Groceries</span>
+          <span class="price">100</span>
+          <div class="icons flex" style="gap: 25px">
+            <ion-icon name="create-outline"  class="editBtn"></ion-icon>
+            <ion-icon name="trash-outline" class="delBtn"></ion-icon>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <!-- Error baba ki jay,,,,,,💃🏻 -->
+    <section class="error-sec flex" style="display: none">
+      <div class="error flex">
+        <div class="error-sign"><ion-icon name="alert"></ion-icon></div>
+        <h2 id="errorMsg">Invalid Input</h2>
+        <button id="closeError">Got, It!</button>
+      </div>
+    </section>
+    <!-- Edit bhi to karna hai.... 😊😁 -->
+    <section class="edit-sec flex" style="display: none">
+      <div class="dialog flex">
+        <ion-icon name="close-circle-outline" id="close"></ion-icon>
+        <p id="edit-err"></p>
+        <input type="text" placeholder="enter title of product" />
+        <input type="number" placeholder="enter cost of product" />
+        <button id="editBtn">Edit</button>
+      </div>
+    </section>
+    <!-- aur kitna likhega khtm,,, Js ko link sink kara jaye💃🏻💭 -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- Tata bye bye khtm -->
